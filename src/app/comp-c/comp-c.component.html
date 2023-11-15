@@ -1,0 +1,15 @@
+<p>comp-c works!</p>
+<button (click)="OnClick()">CompC</button>
+
+<div >
+<table>
+    <thead>
+        <td>Name</td>
+        <td>Status</td>
+    </thead>
+    <tbody *ngFor="let user of users">
+        <td>{{user.name}}</td>
+        <td>{{user.status}}</td>
+    </tbody>
+</table>
+</div>

@@ -7,6 +7,7 @@ import { CompBComponent } from './comp-b/comp-b.component';
 import { CompCComponent } from './comp-c/comp-c.component';
 import { App1Component } from './Services/app1.service';
 import { FormsModule } from '@angular/forms';
+import { Iinjection } from './Services/inject.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     FormsModule
   ],
-  providers: [App1Component],
+  providers: [App1Component,Iinjection],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

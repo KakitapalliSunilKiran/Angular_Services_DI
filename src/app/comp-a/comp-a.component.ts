@@ -8,8 +8,10 @@ import { App1Component } from '../Services/app1.service';
 })
 export class CompAComponent {
   mess1:String="Component C";
+  constructor(private component:App1Component){
+  }
   OnClick(){
-       const serviceobj=new App1Component()
-       serviceobj.OnClick(this.mess1);
+      // const serviceobj=new App1Component()
+       this.component.OnClick(this.mess1);
    }
 }
